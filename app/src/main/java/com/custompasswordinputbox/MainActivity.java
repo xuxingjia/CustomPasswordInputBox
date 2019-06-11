@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         viewById.setCommitListener(new PasswordInputBox.CommitListener() {
             @Override
             public void commitListener(String content) {
+                
             }
         });
     }
