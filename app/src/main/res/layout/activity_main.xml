@@ -7,9 +7,17 @@
     tools:context="com.custompasswordinputbox.MainActivity">
 
     <com.custompasswordinputbox.passwordinputbox.PasswordInputBox
+        android:id="@+id/pib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:amount="6"
+        app:textSize="15sp"
+        app:inputBg="@mipmap/ic_edit_text_bg_black"
+        app:defaultBg="@mipmap/ic_set_new_password_grean"
+        app:boxHeight="50dp"
+        app:boxWidth="50dp"
+        app:margin="10dp"
+        app:inputType="number"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

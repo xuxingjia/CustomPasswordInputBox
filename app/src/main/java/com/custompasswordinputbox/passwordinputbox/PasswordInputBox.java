@@ -149,7 +149,39 @@ public class PasswordInputBox extends LinearLayout implements TextWatcher, View.
     public void afterTextChanged(Editable s) {
         if (s.length() != 0) {
             setFocus();
+            getString();
         }
+    }
+
+    /**
+     * 获取输入的数字
+     */
+    public void getString() {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < amount; i++) {
+            EditText child = (EditText) getChildAt(i);
+            String content = child.getText().toString().trim();
+            if (content.length() == 0) {
+                break;
+            } else {
+                builder.append(content);
+            }
+        }
+        if (commitListener != null) {
+            if (builder.toString().length()==amount){
+                commitListener.commitListener(builder.toString());
+            }
+        }
+    }
+
+    private CommitListener commitListener = null;
+
+    public interface CommitListener {
+        void commitListener(String content);
+    }
+
+    public void setCommitListener(CommitListener commitListener) {
+        this.commitListener = commitListener;
     }
 
     /**
