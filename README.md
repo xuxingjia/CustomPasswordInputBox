@@ -1,7 +1,7 @@
 # PasswordInputBox
 
 ### 样式展示:
-![image](https://github.com/xuxingjia/PasswordInputBox/blob/master/images/wechat_20190611114704.gif)#
+![image](https://github.com/xuxingjia/PasswordInputBox/blob/master/images/wechat_20190611114704.gif)
 
 ### 加载
 Step 1. Add the JitPack repository to your build file
@@ -33,3 +33,14 @@ Step 2. Add the dependency
         app:margin="10dp" //设置box之间间距大小
         app:inputType="number"  /设置输入类型   phone text number password
         tools:ignore="MissingConstraints" />
+	
+	
+## 初始化与事件监听
+
+        PasswordInputBox viewById = findViewById(R.id.pib);
+        viewById.setCommitListener(new PasswordInputBox.CommitListener() {//监听输入的信息
+            @Override
+            public void commitListener(String content) { //content 为输入的信息
+	    	
+            }
+        });
