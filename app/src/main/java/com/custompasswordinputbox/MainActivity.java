@@ -1,11 +1,8 @@
 package com.custompasswordinputbox;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Toast;
 
-import com.custompasswordinputbox.passwordinputbox.PasswordInputBox;
+import com.inputbox.passwordinputbox.PasswordInputBox;
 import com.fubang.custompasswordinputbox.R;
 
 import androidx.appcompat.app.AppCompatActivity;

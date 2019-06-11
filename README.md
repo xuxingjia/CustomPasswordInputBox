@@ -21,7 +21,7 @@ Step 2. Add the dependency
   
 ## 使用手册
 
-    <com.custompasswordinputbox.passwordinputbox.PasswordInputBox
+    <com.inputbox.passwordinputbox.PasswordInputBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:amount="6" // box的个数

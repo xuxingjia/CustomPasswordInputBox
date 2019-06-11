@@ -1,4 +1,4 @@
-package com.custompasswordinputbox.passwordinputbox;
+package com.inputbox.passwordinputbox;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,7 +18,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.fubang.custompasswordinputbox.R;
+
+import com.inputbox.R;
 
 import java.util.ArrayList;
 import java.util.List;

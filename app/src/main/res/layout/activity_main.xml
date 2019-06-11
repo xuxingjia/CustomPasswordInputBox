@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.custompasswordinputbox.MainActivity">
 
-    <com.custompasswordinputbox.passwordinputbox.PasswordInputBox
+    <com.inputbox.passwordinputbox.PasswordInputBox
         android:id="@+id/pib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
