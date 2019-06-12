@@ -16,7 +16,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 
 	dependencies {
-	         implementation 'com.github.xuxingjia:PasswordInputBox:V1.0'
+	         implementation 'com.github.xuxingjia:CustomPasswordInputBox:V1.0'
 	}
   
 ## 使用手册
